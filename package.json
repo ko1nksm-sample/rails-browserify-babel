@@ -31,14 +31,5 @@
     "test-cov": "cross-env NODE_ENV=test nyc mocha --opts ./mocha.opts",
     "karma": "cross-env NODE_ENV=test karma start",
     "metrics": "plato -r -d report app/assets/javascripts"
-  },
-  "nyc": {
-    "instrument": false,
-    "sourceMap": false,
-    "reporter": [
-      "lcov",
-      "text",
-      "html"
-    ]
   }
 }
