@@ -23,6 +23,7 @@ env:
   mocha: true
   node: true
   jquery: true
+  es6: true
 
 parserOptions:
   sourceType: module
