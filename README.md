@@ -90,7 +90,7 @@ Railsの通常のやり方と同じで、`rails server` や `rake assets:precomp
 
 テストの場合は1を飛ばして「2. mocha実行」から開始
 
-1. nyc実行 [設定ファイル: package.json]
+1. nyc実行 [設定ファイル: .nycrc]
 2. mocha実行 [設定ファイル: mocha.opts]
   * babel実行 (--compilers js:babel-core/register)
   * instrument追加 (babel-plugin-istanbul)
@@ -98,6 +98,9 @@ Railsの通常のやり方と同じで、`rails server` や `rake assets:precomp
   * ビルド、開発用ウェブサーバー」の内容
   * power-assert変換 (babel-preset-power-assert)
   * instrumentコード埋め込み (babel-plugin-istanbul)
+
+Railsとの連携機能として `rake` でRailsとnpm test、`rake npm:test` で `npm test`
+を実行するタスクを追加しています。
 
 ### ブラウザテスト、カバレッジ (npm run karma)
 
